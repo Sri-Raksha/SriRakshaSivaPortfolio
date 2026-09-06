@@ -395,8 +395,8 @@ footer{padding:48px 0 32px; background:var(--black); color:var(--paper);}
     <h3 data-i18n="cvModal.title">Pick a format</h3>
     <p class="lm-sub" data-i18n="cvModal.sub">Download whichever version works for you.</p>
     <div class="lang-options">
-      <button class="lang-opt" onclick="downloadCv('en')"><span class="flag">📄</span><span data-i18n="cvModal.en">CV</span></button>
-      <button class="lang-opt" onclick="downloadCv('de')"><span class="flag">📃</span><span data-i18n="cvModal.de">Resume</span></button>
+      <button class="lang-opt" onclick="downloadCv('cv')"><span class="flag">📄</span><span data-i18n="cvModal.en">CV</span></button>
+      <button class="lang-opt" onclick="downloadCv('resume')"><span class="flag">📃</span><span data-i18n="cvModal.de">Resume</span></button>
     </div>
   </div>
 </div>
@@ -700,13 +700,13 @@ footer{padding:48px 0 32px; background:var(--black); color:var(--paper);}
 </footer>
 
 <script>
-const cvFiles = { en: "assets/cv/Sri_Raksha_Siva_CV_EN.pdf", de: "assets/cv/Sri_Raksha_Siva_CV_DE.pdf" };
+const cvFiles = { cv: "assets/cv/SriRakshaSiva_CV.pdf", resume: "assets/cv/SriRakshaSiva_Resume.pdf" };
 function openCvModal(e){ if(e) e.preventDefault(); document.getElementById('cvModal').classList.add('show'); }
 function closeCvModal(){ document.getElementById('cvModal').classList.remove('show'); }
-function downloadCv(lang){
+function downloadCv(type){
   const a = document.createElement('a');
-  a.href = cvFiles[lang];
-  a.download = lang === 'de' ? 'Sri_Raksha_Siva_Resume.pdf' : 'Sri_Raksha_Siva_CV.pdf';
+  a.href = cvFiles[type];
+  a.download = type === 'resume' ? 'SriRakshaSiva_Resume.pdf' : 'SriRakshaSiva_CV.pdf';
   document.body.appendChild(a); a.click(); document.body.removeChild(a);
   closeCvModal();
 }
