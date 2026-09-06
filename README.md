@@ -1,6 +1,6 @@
 # Sri Raksha Siva — Portfolio 🌻
 
-**Live site:** [[sri-raksha.github.io/SriRakshaSiva](https://sri-raksha.github.io/SriRakshaSivaPortfolio/)]
+**Live site:** [sri-raksha.github.io/SriRakshaSivaPortfolio](https://sri-raksha.github.io/SriRakshaSivaPortfolio/)
 
 A personal portfolio site for Sri Raksha Siva — Applied AI Master's student at Hochschule Heilbronn, and Business Analyst with experience across B2B and Quick Commerce. The site walks through my education, work experience, research and patents, projects, skills, and a bit of life outside the CV — in both **English and German**.
 
